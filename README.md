@@ -1,9 +1,9 @@
 # Spring-Fatecha
 ## Project Configuration
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/app.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/app.PNG)
 
 ## · Action Context
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/context.PNG) ![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/context2.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/context.PNG) ![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/context2.PNG)
  This class defines the way in which we will obtain access to the context of our application
 ### Variables
 
@@ -21,8 +21,8 @@
  This method creates and returns a new PersistenceManager using the current context.
 
 ## · Abstract Action
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/abstractAction.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/abstractAction2.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/abstractAction.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/abstractAction2.PNG)
 
 This class is generic and has two types of parameters: 'A' and 'R'
 ### Variables
@@ -36,7 +36,7 @@ This class is generic and has two types of parameters: 'A' and 'R'
  - `setResultOnly()`: Set the result after performing the action.
 
 ## · Action Principal
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/actionPrinpical.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/actionPrinpical.PNG)
 Identity or principal of a user or actor in the system. Contains information about the user, such as username, email, roles, and other relevant details.
 ### Variables
  - `private String autToken`: Appears to be an authentication token.
@@ -53,8 +53,8 @@ Identity or principal of a user or actor in the system. Contains information abo
 `public static ActionPrincipal newAnonymous()`: It is a factory method that creates and returns an anonymous instance of ActionPrincipal.
 
 ## Actions
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/actions.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/actions2.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/actions.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/actions2.PNG)
 Utility class that provides static methods for creating and executing actions. These methods simplify the creation of contexts and actions and the execution of these actions.
 
 - Use ActionContext to create contexts that are passed to actions.
@@ -71,11 +71,11 @@ Utility class that provides static methods for creating and executing actions. T
  - `public static <A extends AbstractAction, P> A perform(Class<A> aClass, ActionContext ac, P argument)`: Performs an action of the specified type using the provided ActionContext and argument.
 
 ## Abstract Endpoint
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/configEndpoint.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/abstractEndpoint.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/abstractEndpoint2.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/abstractEndpoint3.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/abstractEndpoint4.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/configEndpoint.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/abstractEndpoint.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/abstractEndpoint2.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/abstractEndpoint3.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/abstractEndpoint4.PNG)
 Base class for endpoints in a Spring application. Provides utility methods to handle actions and return responses. Concrete subclasses will likely implement specific endpoints and use these utility methods to handle actions and return responses.
 
 ### Variables
@@ -92,8 +92,8 @@ Base class for endpoints in a Spring application. Provides utility methods to ha
 
 ## Persistence
 ## Abstract Persistence
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/modelsConfig.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/abstractPersistence.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/modelsConfig.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/abstractPersistence.PNG)
 Base class for persistence operations in the application. Provides a context for action and a way to access services through that context. Concrete subclasses will likely implement specific operations related to the database or other data sources.
 
 ### Variables
@@ -104,7 +104,7 @@ Base class for persistence operations in the application. Provides a context for
  - `protected <T> T getService(Class<T> tClass)`: A method that uses the action context to get a service of the specified type.
 
 ## Persistence Manager 
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/persistenceManager.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/persistenceManager.PNG)
 Utility class that facilitates access to different persistence classes in the application. In this case, it provides access to Ztest-related persistence.
 
 ### Variables
@@ -114,8 +114,8 @@ Utility class that facilitates access to different persistence classes in the ap
  - `public ZtestPersistence getZtestPersistence()`: `Returns a new instance of ZtestPersistence using the associated action context.
 
 ## App Constants
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/appError.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/appConstants.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/appError.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/appConstants.PNG)
 Utility class that provides global constants for the application. Constants are values that do not change and are used throughout the application to ensure consistency.
 
 ### Variables
@@ -124,7 +124,7 @@ Utility class that provides global constants for the application. Constants are 
  - `MOD_TEST_CODE`: It is an integer constant with the value 90000.
 
 ## App Errors
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/appErrors.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/appErrors.PNG)
 The values listed represent different types of errors. Each one has an associated code that is passed as an argument to the enumeration constructor.
 
 ### Variables
@@ -144,11 +144,11 @@ The enumeration also references the AppConstants class to get the value of APP_C
 In short, AppErrors provides a standardized way to represent and handle errors in your application using error codes and friendly names.
 
 ## Validation Configuration
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/lib.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/lib.PNG)
 ## CLT Exception
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/cltException.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/cltException2.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/cltException3.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/cltException.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/cltException2.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/cltException3.PNG)
 Is a custom exception
 
 ### Variables
@@ -174,7 +174,7 @@ Is a custom exception
  - Constructor that takes an int called code, a String called name, a String called msg, and a Throwable called cause.
 
 ## Exception Prototype
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/exceptionPrototype.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/exceptionPrototype.PNG)
 Define a prototype or contract for exceptions, to ensure that any custom exception implements certain methods that return a code and a name.
 
 ### Methods
@@ -183,7 +183,7 @@ Define a prototype or contract for exceptions, to ensure that any custom excepti
  - `getName()`: This method should return a value of type String, which represents the name of the exception. 
 
 ## Thrower
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/thrower.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/thrower.PNG)
 Make it easy to throw these custom exceptions by providing several static methods with different argument combinations.
 
 ### Methods
@@ -194,10 +194,10 @@ Make it easy to throw these custom exceptions by providing several static method
  - `throwException(ExceptionPrototype proto, String msg, Throwable cause, Map extra)`: Throws a CLTException using an exception prototype, a message, a cause, and a map of additional information.
 
 ## V
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/v.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/v2.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/v3.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/v4.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/v.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/v2.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/v3.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/v4.PNG)
 Validation tool that provides several static methods to check common conditions and, if met, throw custom exceptions.
 
 ### Methods
@@ -212,80 +212,80 @@ Validation tool that provides several static methods to check common conditions 
  - `isEmpty(Object o)`: Returns true if the given object is null, an empty string, or an empty collection, otherwise returns false.
 
 ## How to use Configuration / MOD
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/mod.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/mod.PNG)
 
 First of all, define our enums for errors in this module.
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestConstants.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestErrors.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestConstants.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestErrors.PNG)
 
 Then `ZtestConstants` should go to the global error handling module, which is the `AppConstants`
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/appConstantsZtest.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/appConstantsZtest.PNG)
 
 We then define our entity to be mapped to the database.
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestEntity.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestEntity.PNG)
 
 We then create the repository for the entity, making it extend `JPArepostory`
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestRepo.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestRepo.PNG)
 
 We create the service for the repository where we will call the methods generated by JPA or by our specific queries.
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestService.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestService.PNG)
 
 We create a persistence for the `Ztest` module where all the services of that module will go. Making it extend `AbstractPersistence` to be able to use getService
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestPersistence.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestPersistence.PNG)
 
 Said persistence of that module must be called in the global persistence manager of our Persistence Managet project
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestPersistenceGlobal.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestPersistenceGlobal.PNG)
 
 We begin to give logic and validation to what we want to do, we create the Argument of the Action that we will execute
 
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestActions.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestActions.PNG)
 
 #### Argument
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestArgument.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestArgument.PNG)
 
 In the Argument we only define those variables to be used in the action
 
 #### Action
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestAction.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestAction2.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestAction.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestAction2.PNG)
 
 The action extends the `AbstractAction`, which I mean that we can use the context of our project, and thus also the global persistence and other global modules to be added in the context
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestActionAbs.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestActionAbs.PNG)
 
 Here we also see that we give the argument of the action and result that waits to be shown
 
 We define our variable and bring those methods of the `AbstractAction`
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestActionAbs2.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestActionAbs2.PNG)
 
 #### checkArgument
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/checkArgument.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/checkArgument.PNG)
 
 Here we handle errors that are expected before any action logic is executed.
 As you can see, we used the ztest module enum and the `V` tool that was configured to wait for the expected error enum argument.
 
 #### doAction
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/doAction.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/doAction.PNG)
 
 here those methods to be executed and controlled in the Action will be called
 Only the methods should be called, refrain from adding too much logic since that is another section of the doAction
 
 #### setResutlOnly
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/setResultOnly.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/setResultOnly.PNG)
 
 In this section we only wait for the result of the Action once it has passed to the checkArgument and the doAction
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestActionAbs.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestActionAbs.PNG)
 
 and the result is expected, once it is extended to the AbstractAction in the Action the argument and the expected result are already declared
 
 #### internals
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestActionAbs3.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestActionAbs3.PNG)
 This is the place where all the logic should go in methods to be executed and it is only called in the doAction
 Here we also see how the context is called, then the global persistence followed by the persistence of the module that you want to call and the service
 Then return or use the method of the service you want to use
 
 #### Finally we reach the controller or the endpoint
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestEndpointAbs.PNG)
-![](https://github.com/AdanLedesma66/Spring-Fatecha/blob/main/readmeImg/ztestEndpoint.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestEndpointAbs.PNG)
+![](https://github.com/Ernestolop/spring-doc/blob/master/readmeImg/ztestEndpoint.PNG)
 First of all we see that the class extends AbstractEndpoint
 to be able to use the method which we can use the argument and the action
 
